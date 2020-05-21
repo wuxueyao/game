@@ -25,5 +25,22 @@
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/communication/communication",
+        "text":"communication"
+      },
+      {
+        "pagePath":"pages/ask/ask",
+        "text":"ask"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "mine"
+      }
+    ]
+  }
 }
