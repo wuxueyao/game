@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/mine/mine",
     "pages/ask/ask",
+    "pages/mine/mine",
     "pages/communication/communication",
     "pages/index/index",
     "pages/userConsole/userConsole",
@@ -26,20 +26,19 @@
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2",
-
-  "tabBar":{
-    "list":[
+  "tabBar": {
+    "list": [
       {
-        "pagePath":"pages/communication/communication",
-        "text":"communication"
+        "pagePath": "pages/communication/communication",
+        "text": "沟通"
       },
       {
-        "pagePath":"pages/ask/ask",
-        "text":"ask"
+        "pagePath": "pages/ask/ask",
+        "text": "问答"
       },
       {
         "pagePath": "pages/mine/mine",
-        "text": "mine"
+        "text": "我的"
       }
     ]
   }

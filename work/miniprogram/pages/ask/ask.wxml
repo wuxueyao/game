@@ -1,2 +1,50 @@
 <!--pages/ask/ask.wxml-->
-<text>pages/ask/ask.wxml</text>
+<view class="all">
+  <!-- 搜索框 -->
+  <search/>
+  <!--区块选择  -->
+  <view class="kinds">
+    <view class="module {{num==1?'select':''}}" data-num='1' bindtap="select">汪星人</view>
+     <view class="module  {{num==2?'select':''}}" data-num='2'  bindtap="select">喵星人</view>
+    <view class="module  {{num==3?'select':''}}"data-num='3'  bindtap="select">其他星人</view>
+    <view class="module ask">+ 提问</view>
+  </view>
+  <image style="height:80px" src="../../images/ask.png"></image>
+  <!-- 轮播图 -->
+
+  <view class="kinds">
+    <view class="module {{kind==1?'checked':''}}" data-kind='1' bindtap="checked">关注</view>
+     <view class="module  {{kind==2?'checked':''}}" data-kind='2'  bindtap="checked">最新</view>
+    <view class="module  {{kind==3?'checked':''}}"data-kind='3'  bindtap="checked">待解决</view>
+  </view>
+  <!-- 问题模块 -->
+  <view>
+    <view class="questions">
+      <text class="title">{{title}}</text>
+      <view class="user">
+        <image class="head" src="../../images/head.jpg"></image>
+        <text class="name">{{user_name}}</text>
+      </view>
+      <text class="answer">{{answer}}</text>
+      <view class="praise">
+        <text>{{praise}} 赞同 .</text>
+        <text class="comment">{{comment}} 评论</text>
+      </view>
+    </view>
+    <view class="questions">
+      <text class="title">{{title}}</text>
+      <view class="user">
+        <image class="head" src="../../images/head.jpg"></image>
+        <text class="name">{{user_name}}</text>
+      </view>
+      <text class="answer">{{answer}}</text>
+      <view class="praise">
+        <text>{{praise}} 赞同 .</text>
+        <text class="comment">{{comment}} 评论</text>
+      </view>
+    </view>
+  </view>
+
+  
+</view>
+
