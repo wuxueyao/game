@@ -1,2 +1,36 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<!-- <text>pages/mine/mine.wxml</text> -->
+<view class="bg">
+  <view class="head">
+      <view wx:if="{{openid}}">
+          <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGetUserInfo">登录</button>
+      </view>
+      <view wx:if="{{!openid}}">
+          <view class="headIcon">
+              <image src="{{userInfo.avatarUrl}}" style="width:70px;height:70px;"></image>
+          </view>
+          <view class="login">{{userInfo.nickName}}</view>
+      </view>
+  </view>
+</view>
+<view class="hr"></view>
+<view class='item' bindtap="goToIdentifyPage">
+    <view class="title">身份认证</view>
+    <view class="detail2">
+        <text>></text>
+    </view>
+</view>
+<view class="line"></view>
+<view class="item">
+    <view class="title">我的问答</view>
+    <view class="detail2">
+        <text> ></text>
+    </view>
+</view>
+<view class="line"></view>
+<view class="item">
+    <view class="title">设置</view>
+    <view class="detail2">
+        <text> ></text>
+    </view>
+</view>

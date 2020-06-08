@@ -117,4 +117,10 @@ Page({
     })
   },
 
+  //事件处理函数
+  goToIdentifyPage:function(){
+    wx.navigateTo({
+      url: '../identify/identify',
+    })
+  },
 })

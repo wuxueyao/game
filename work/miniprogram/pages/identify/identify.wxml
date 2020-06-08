@@ -1,0 +1,175 @@
+
+<!-- <input class="input" name="userType" placeholder="请输入专业"
+     bindinput="userTypeInput" />
+<input class="input" name="userHospital" placeholder="请输入工作医院"
+    bindinput ="userHospitalInput"/>
+<input class="input" name="userHospital" placeholder="请输入行医执照编号"
+    bindinput ="userHospitalInput"/>
+    <input class="input" name="userHospital" placeholder="请上传行医执照图片"
+    bindinput ="userHospitalInput"/>
+<button class="identifyBtn" bindtap="identifyBtnClick">认证</button> -->
+
+<!-- <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='item'>
+      \r\n\r\n\r\n\r\n\r\n\r\n\r\n真实姓名：
+      <view class='bk'>
+        <input name='userName' class="input" placeholder="{{geren.nickname}}" value='{{geren.nickname}}' bindinput="userNameInput" maxlength='15' auto-height/>
+      </view>
+    </view>
+
+    <view class='item'>
+      工作医院：
+      <view class='bk'>
+        <input name='formrealName' class="input" placeholder="{{detailgeren.realName}}" value='{{detailgeren.realName}}' bindinput="realName" maxlength='15' auto-height/>
+
+      </view>
+    </view>
+
+    <view class='item'>
+      \r\n\r\n\r\n\r\n\r\n\r\n\r\n性别：
+      <radio-group class="radio-group" bindchange="radioChange" name='formsex'>
+
+       
+        <label class='radio'>
+        
+          <radio value="{{items[0].name}}" checked='{{boy}}' /> {{items[0].value}}
+          <radio value="{{items[1].name}}" checked='{{gril}}' /> {{items[1].value}}
+        </label>
+
+      </radio-group>
+    </view>
+
+    <view class='item'>
+      \r\n\r\n\r\n\r\n\r\n\r\n\r\n科室：
+      <view class='bk'>
+        <view class='time'>
+          <picker mode="date" value="{{date}}" start="1800-01-01" end="2222-01-01" bindchange="changeDate" name="formdate">
+            <view>
+              {{date}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+
+    <view class='item'>
+      \r\n\r\n\r\n\r\n行医执照编号：
+      <view class='bk'>
+       <view class="tui-picker-content">
+          <picker name="formaddress" bindchange="changeRegin" mode="region" value="{{region}}">
+         
+            <view class="tui-picker-detail">{{region}}</view>
+          </picker>
+        </view>
+
+      </view>
+    </view>
+
+    <view class='item'>
+      ：
+      <view class='bk'>
+      
+        <input name="formdetailAddress" class="textarea" placeholder="{{detailgeren.detailAddress}}" value='{{detailgeren.detailAddress}}' bindinput="detailAddress" maxlength='100' auto-height/>
+
+      </view>
+    </view>
+
+ 
+    <view class='anniu'>
+      <button class='btn' formType="submit">保存</button>
+      <button class='btn' formType="reset">重置</button>
+    </view>
+
+</form> -->
+<!-- <view class="cont">
+  <view class="shiming">实名认证
+    <text style="font-size:22rpx">（请上传真实的个人信息，认证通过后将无法修改）</text>
+  </view>
+  <form bindsubmit="reg">
+    <view class="xing">姓名
+
+      <input placeholder-class='placeholder' placeholder='请输入真实姓名' class="in" name="linkman" value="{{linkman}}" />
+
+    </view>
+
+ 
+
+    <view class="xing">所在医院
+
+      <input placeholder-class='placeholder' placeholder='请输入所在医院' class="in" name='idc_id' value="{{idc_id}}" />
+
+    </view>
+
+    <view class="xing">所在科室
+
+      <input placeholder-class='placeholder' placeholder='请输入所在科室' class="in" name='tel' value="{{tel}}" />
+
+    </view>
+
+    <view class="xing">行医执照编号
+
+      <input placeholder-class='placeholder' placeholder='请输入行医执照编号' class="in" name='tel' value="{{tel}}" />
+
+    </view>
+
+    <view class="shenfen">
+      <view class="shenfen1">行医执照证明</view>
+
+      <text style="font-size:26rpx;color:#d9002f;">*请使用手机横向拍摄以保证图片正常显示</text>
+      <block wx:if="{{idc_face}}">
+        <view class="cl_img">
+          <image src="{{idc_face}}" mode="aspectFit" bindtap="idc_face"></image>
+          <view class="hh">此图片仅供审核用</view>
+        </view>
+      </block>
+      <block wx:else>
+        <view class="cl_img">
+          <image src="../../images/upload.jpg" bindtap="idc_face"></image>
+        </view>
+
+      </block>
+
+    </view>
+    <view style="padding-top:30rpx;font-size:30rpx;text-align:center;color:#cccccc">————请确认以上信息准确无误————</view>
+
+    <button type="" form-type="submit" hover-class='button-hover' class='su'>提交</button>
+
+  </form>
+
+</view> -->
+<view class="cont">
+  <view class="shiming">实名认证
+    <text style="font-size:22rpx">（请上传真实的个人信息，认证通过后将无法修改）</text>
+  </view>
+  <form  bindsubmit="formSubmit" bindreset="formReset">
+    <view class="xing">姓名
+      <input placeholder-class='placeholder' placeholder='请输入真实姓名' class="in" name="linkman" value="{{linkman}}" />
+    </view>
+    <view class="xing">所在医院
+      <input placeholder-class='placeholder' placeholder='请输入所在医院' class="in" name='idc_id' value="{{idc_id}}" />
+    </view>
+    <view class="xing">所在科室
+      <input placeholder-class='placeholder' placeholder='请输入所在科室' class="in" name='tel' value="{{tel}}" />
+    </view>
+    <view class="xing">行医执照编号
+      <input placeholder-class='placeholder' placeholder='请输入行医执照编号' class="in" name='tel' value="{{tel}}" />
+    </view>
+    <view class="shenfen">
+      <view class="shenfen1">行医执照证明</view>
+      <text style="font-size:26rpx;color:#d9002f;">*请使用手机横向拍摄以保证图片正常显示</text>
+      <block wx:if="{{idc_face}}">
+        <view class="cl_img">
+          <image src="{{idc_face}}" mode="aspectFit" bindtap="idc_face"></image>
+          <view class="hh">此图片仅供审核用</view>
+        </view>
+      </block>
+      <block wx:else>
+        <view class="cl_img">
+          <image src="../../images/upload.jpg" bindtap="idc_face"></image>
+        </view>
+      </block>
+    </view>
+    <view style="padding-top:30rpx;font-size:30rpx;text-align:center;color:#cccccc">————请确认以上信息准确无误————</view>
+    <button type="" form-type="submit" hover-class='button-hover' class='su'>提交</button>
+  </form>
+</view>
