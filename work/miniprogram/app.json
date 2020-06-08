@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/mine/mine",
     "pages/ask/ask",
+    "pages/mine/mine",
     "pages/communication/communication",
     "pages/index/index",
     "pages/userConsole/userConsole",
@@ -26,5 +26,21 @@
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/communication/communication",
+        "text": "沟通"
+      },
+      {
+        "pagePath": "pages/ask/ask",
+        "text": "问答"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
 }

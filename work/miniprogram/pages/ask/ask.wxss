@@ -1,1 +1,77 @@
 /* pages/ask/ask.wxss */
+.all{
+  background-color: white;
+}
+.kinds{
+  display: flex;
+  height:36px;
+  padding: 0rpx 20rpx;
+  justify-content: space-around;
+  align-items: center;
+}
+.module{
+  margin-right:10rpx;
+  padding: 0rpx 20rpx;
+  font-size:35rpx;
+  color:grey;
+}
+.select{
+  background-color: #87CEFA;
+  border: 1rpx solid #87CEFA;
+  border-radius:25rpx;
+  color: white;
+  font-weight: bold;
+}
+.ask{
+  color: red;
+  font-weight: bold;
+}
+.checked{
+  border-bottom: 10rpx solid #87CEFA;
+  font-weight: bold;
+}
+.questions{
+  padding: 10px;
+  border-bottom:5px solid #dddcdc;
+  display: flex;
+  flex-direction: column;
+
+}
+.title{
+  font-weight: bold;
+  font-size:15px;
+  margin:5px 0;
+}
+.user{
+
+}
+.head{
+  width:20px;
+  height:20px;
+  border-radius: 20px;
+}
+.name{
+    font-size:14px;
+    margin:5px;
+    color: #585858;
+    font-weight: bold;
+}
+.answer{
+  font-size: 13px;
+  color: #666666;
+  display: -webkit-box;
+	margin:15rpx 0;
+	line-height: 40rpx;
+	word-break: break-all;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.praise{
+  font-size: 13px;
+  color: gray;
+}
+.comment{
+  margin-left: 5px;
+}
